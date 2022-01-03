@@ -37,7 +37,7 @@ if (allTodoList != undefined) {
     list_el.innerHTML += `<div class="task">
       <div class="content">
         <span class="input_checked"></span>
-        <input type="text" value=${element} class="text" readonly="readonly">
+        <input type="text" value="${element}" class="text" readonly="readonly">
       </div>
       <div class="actions">
         <button class="edit">Edit</button>
