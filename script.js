@@ -34,6 +34,7 @@ todOper();
 allTodoList = JSON.parse(localStorage.getItem("todoKey"));
 if (allTodoList != undefined) {
   allTodoList.forEach(element => {
+    console.log(element)
     list_el.innerHTML += `<div class="task">
       <div class="content">
         <span class="input_checked"></span>
@@ -53,9 +54,9 @@ function addTodo() {
   list_el.innerHTML += `<div class="task">
       <div class="content">
         <span class="input_checked"></span>
-        <input type="text" value=${
+        <input type="text" value="${
     addTodoList[addTodoList.length - 1]
-    } class="text" readonly="readonly">
+    }" class="text" readonly="readonly">
       </div>
       <div class="actions">
         <button class="edit">Edit</button>
